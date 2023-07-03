@@ -24,14 +24,18 @@ document.getElementById("submit_btn").onclick = function age() // on clicking th
         var d= d1-d2;
         d= month[m2]-d;
     }
+    else{
+        var d= d2-d1;
+    }
 
     if (m1>m2) {
         y2 = y2 - 1;
         var m = m1-m2;
         m = 12-m;
     }
-
-    var m = m2-m1;
+    else{
+        var m = m2-m1;
+    }
     var y = y2-y1;
     document.getElementById("years-output").innerHTML = y;
     document.getElementById("months-output").innerHTML = m;
